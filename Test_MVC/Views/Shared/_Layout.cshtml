@@ -1,0 +1,166 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Test_MVC</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+
+     <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+          integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <!-- Optional JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+            integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+            crossorigin="anonymous"></script>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!--Google Font-->
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+
+    <!--custom CSS class-->
+    <style>
+        body {
+            font-family: 'Fredoka One', cursive;
+            background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQ7-G-rtaNrhedkPyM4yGm7oQf8Twh-wK13Qg&usqp=CAU');
+        }
+
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 150%;
+        }
+
+        .container {
+            position: relative;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+            .container img {
+                vertical-align: middle;
+            }
+
+            .container .content {
+                position: absolute;
+                bottom: 0;
+                background: rgb(0, 0, 0);
+                /* Fallback color */
+                background: rgba(0, 0, 0, 0.4);
+                /* Black background with 0.5 opacity */
+                color: #f1f1f1;
+                width: 94.6%;
+                padding: 20px;
+            }
+    </style>
+
+    <title></title>
+</head>
+<body>
+
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color:#2471A3 ;">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="https://localhost:44311/home/index">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://localhost:44311/home/schedule">Schedule</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">All Champion</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">League Pass</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Stat</a>
+                    </li>
+                    
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            News
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">NBA-TV</a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+
+    <!--Header-->
+    <div class="container-fluid mt-5 " style="background-color: black;">
+        <div class="container">
+            <div class="row p-3  ">
+                <div class="col-4 pt-4 ">
+                    <img class="center"
+                         src="https://assetsmysky.blob.core.windows.net/assetsmysky/production/media-upload/1518488625_slamdunk.png"
+                         class="img-fluid">
+                </div>
+                <div class="col-4">
+                    <img class="center"
+                         src="https://301472-922839-raikfcquaxqncofqfm.stackpathdns.com/wp-content/uploads/2018/11/nba-franchise.jpg"
+                         class="img-fluid">
+                </div>
+                <div class="col-4">
+                    <img class="center"
+                         src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRqkTjM6iZtu4w16aogtwdh5QVICcqmwmDPHg&usqp=CAU"
+                         class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <br><br><br><br><br>
+    <footer class="border-top footer text-muted">
+        <div class="container-fluid bg-light ">
+            <div class="container bg-light ">
+                &copy; 2020 - Test_MVC - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+            </div>
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @RenderSection("Scripts", required: false)
+</body>
+</html>
